@@ -1,0 +1,418 @@
+body{
+    margin: 0;
+    background-color: #EAEAEA;
+}
+h1{
+    font-family: 'Montserrat', sans-serif;
+    cursor: default;
+}
+footer{
+    margin-top: 50px;
+    background-color: #1C1A1A;
+    position: absolute;
+    height: 50px;
+    width: 100%;
+    color: #FFF;
+    display: block;
+    text-align: right;
+    font-family: 'Montserrat', sans-serif;
+    cursor: default;
+}
+.outside{
+    height: 50px;
+    position: relative;
+}
+.mobileNav{
+    display: none;
+    width: 120px;
+    height: 30px;
+    margin-top: 10px;
+    margin-right: 10px;
+    float: right;
+    cursor: pointer;
+}
+.menu{
+    float: left;
+    box-sizing: border-box;
+}
+.menu h3{
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+}
+.burger{
+    float: right;
+    box-sizing: border-box;
+}
+.burger div{
+    background-color: black;
+    height: 3px;
+    width: 25px;
+    margin: 5px;
+}
+.navbar{
+    margin: 0;
+    height: 50px;   
+    background-color: #EAEAEA;
+    font-family: 'Montserrat', sans-serif;
+}
+.navbar ul{
+    list-style: none;
+    word-spacing: 2em;
+    margin: 0;
+    padding: 15px;
+    padding-left: 50px;
+}
+.navbar li{
+    display: inline;
+}
+.navbar li a{
+    color: black;
+    text-decoration: none;
+}
+.navbar li a:hover{
+    color: #F9AA9C;
+    text-decoration: underline;
+}
+.navbar .separator{
+    cursor: default;
+}
+.header{
+    margin: 0;
+    height: 52em;
+    border: 8px black solid;
+    border-top: 10px black solid;
+    border-bottom: 10px black solid;
+    position: relative;
+    background-image: url('/images/flourescent.jpg');
+    background-repeat: no-repeat;
+    background-position: center center; 
+    background-size: 100% 100%;
+    background-color: #272525;
+    color: #ffffff;
+    padding-bottom: 60px;
+    font-family: 'Montserrat', sans-serif;
+}
+.intro{
+    background-color: #1C1A1A ; 
+    opacity: 0.85;
+    border: 5px white solid;
+    border-radius: 10px;
+    padding: 20px 100px;
+    text-align: center;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+#projectBg{
+    background-image: url('/images/blurry.jpg');
+}
+#aboutBg{
+    background-image: url('/images/light.jpg');
+}
+#projectItemBg-1{
+    background-image: url('/images/blurrycode.jpg');
+}
+#projectItemBg-2{
+    background-image: url('/images/code.jpg');
+}
+.social{
+    margin: 0;
+    margin-top: 25px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+.header h1{
+    font-size: 42px;
+}
+.header p{
+    font-size: 21px;
+    font-weight: 100;
+    cursor: default;
+}
+.header .fa {
+    padding: 10px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%;
+    opacity: 0.75;
+}
+.header .fa:hover {
+    opacity: 1;
+}
+  .header .fa-linkedin {
+    background: #007bb5;
+    color: white;
+  }
+  .header .fa-github{
+      background: white;
+      color: black;
+  }
+  .container{
+      margin: 0;
+      margin-top: 50px;
+      margin-left: 25px;
+      margin-right: 25px;
+      min-height: 250px;
+  }
+  #homeContainer{
+    border: 1px black solid;
+    border-radius: 25px;
+  }
+  .projectItem{
+      font-family: 'Montserrat', sans-serif;
+  }
+  .projectItem h3{
+      font-size: 40px;
+  }
+  .projectItem p{
+      font-size: 24px;
+  }
+  .projectItem li{
+      font-size: 24px;
+  }
+  .projectImage{
+    font-family: 'Montserrat', sans-serif;
+    height: 700px;
+    position: relative;
+    border: 0.5px solid black;
+    border-radius: 5px;
+  }
+  .projectImage h3{
+      font-size: 40px;
+  }
+  .projectImage .imageView{
+      margin: 0;
+      background-color: rgba(39, 37, 37, 1);
+      height: 100%;
+      width: 85%;
+      float: right;
+      box-sizing: border-box;
+      position: relative;
+      opacity: 1;
+  }
+  .projectImage .imageView img{
+      max-width: 100%;
+      max-height: 100%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      margin-right: -50%;
+      transform: translate(-50%, -50%);
+  }
+  .projectImage .images{
+      text-align: center;
+      overflow-y: scroll;
+      margin: 0;
+      width: 15%;
+      height: 100%;
+      float: left;
+      box-sizing: border-box;
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+  }
+  .projectImage .images::-webkit-scrollbar{
+      display: none;
+  }
+  .rowItem h4{
+      margin-bottom: 8px;
+  }
+  .rowItem img{
+      cursor: pointer;
+  }
+  .content{
+      margin: 0;
+      float: left;
+      width: 40%;
+      min-height: 250px;
+      padding: 10px 30px;
+      box-sizing: border-box;
+      color: #333;
+  }
+  .content li{
+    cursor: default;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+  }
+  .sidebar{
+      margin: 0;
+      float: right;
+      width: 60%;
+      height: 250px;
+      background: #333;
+      color: #fff;
+      padding: 10px 30px;
+      box-sizing: border-box;
+      border-radius: 0 23px 23px 0;
+  }
+  .sidebar li{
+    cursor: default;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+  }
+  .sidebar .overflow{
+      cursor: default;
+      margin-left: 190px;
+      margin-top: -165px;
+  }
+  #aboutcontent{
+      font-family: 'Montserrat', sans-serif;
+      width: 75%;
+      min-height: 310px;
+      margin-left: 100px;
+  }
+  #aboutcontent h1{
+      font-size: 48px;
+  }
+  #aboutcontent p{
+      font-size: 24px;
+  }
+  #projectContent{
+      margin: 50px auto;
+      margin-bottom: 0;
+      min-height: 790px;
+      max-width: 1090px;
+      border:none;
+  }
+  .item{
+      display: inline-block;
+      background-color: #272525;
+      border-radius: 15px;
+      height: 250px;
+      min-width: 350px;
+      position: relative;
+      margin: 5px;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 26px;
+  }
+  .item a{
+    text-decoration: none;
+    color: #fff;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+  }
+  .item a:hover{
+      text-decoration: underline;
+  }
+  #lessRow{
+      margin-left: 185px;
+  }
+  @media(max-width: 1090px){
+      .navbar{
+          display: flex;
+          justify-content: space-around;
+      }
+      #homeContainer{
+          border: none;
+      }
+      .header{
+          height: 35em;
+      }
+      .content{
+          border: 1px black solid;
+          float:none;
+          width: 100%;
+          border-radius: 25px;
+          margin-bottom: 10px;
+      }
+      .sidebar{
+          float:none;
+          width: 100%;
+          height: 325px;
+          border-radius: 25px;
+          margin-top: 10px;
+      }
+      .sidebar .overflow{
+          margin-left: 0;
+          margin-top: -15px;
+      }
+      .item{
+          margin: 0;
+          width: 100%;
+      }
+      #lessRow{
+          margin: 0;
+          width: 100%;
+      }
+      #projectContent{
+          margin-left: 20px;
+          margin-right: 20px;
+      }
+      .projectImage .images{
+          float: none;
+          width: 100%;
+          height: 17.5%;
+          overflow-x: visible;
+          
+      }
+      .rowImages{
+          margin: 0;
+          min-width: 1367px;
+          text-align: left;
+      }
+      .rowItem{
+          margin: 0 5px;
+          display: inline-block;
+      }
+      .rowItem h4{
+          margin: 0;
+          text-align: center;
+      }
+      .rowItem img{
+          height: 80px;
+      }
+      .projectImage .imageView{
+          float: none;
+          width: 100%;
+          height: 82.5%;
+      }
+  }
+  @media(max-width: 600px){
+    .header{
+        height: 25em;
+    }
+    .outside{
+        transition: height 0.5s;
+    }
+    .projectItem{
+        word-break: break-all;
+    }
+    .mobileNav{
+        display: block;
+        position: absolute;
+        top: 15px;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%);
+    }
+    .navbar{
+        margin: 0;
+        display: static;
+        position: absolute;
+        margin-top: 50px;
+    }
+    .navbar .separator{
+        font-weight: 100;
+    }
+    .navbar li{
+        display: block;
+        font-size: 26px;
+        line-height: 1.4em;
+    }
+    #aboutcontent{
+        margin-left:50px;
+    }
+  }
